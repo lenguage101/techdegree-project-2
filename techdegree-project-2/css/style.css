@@ -1,0 +1,320 @@
+* {
+	margin: 0;
+}
+ul {
+	padding: 0;
+}
+.container, footer {
+	background: rgb(249, 250, 250);
+	text-align: center;
+	color: rgb(146, 153, 154);
+	overflow: auto;
+}
+
+/*div.main-nav starts*/
+.main-nav {
+	text-align: center;
+}
+.main-nav li {
+	list-style: none;
+}
+.main-nav li a {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(56, 64, 71);
+}
+/*div.leftNav starts*/
+.leftNav {
+	padding: 20px;
+}
+.main-nav li a#myName {
+	font-weight: 700;
+	font-size: 42px;
+}
+.main-nav li a#myName:hover {
+	color: rgb(201,72,72);
+	cursor: pointer;
+}
+/*div.leftNav ends*/
+
+/*div.rightNav starts*/
+.rightNav li {
+    width: 95%;
+    background: #fff;
+    padding: 8px 0;
+    margin: 10px auto;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.rightNav li a:hover{
+	color: rgb(201,72,72);
+	cursor: pointer;
+}
+/*div.rightNav ends*/
+/*div.main-nav ends*/
+
+/*header starts*/
+header img {
+	padding: 50px 0 30px 0;
+	width: 70%;
+	margin: 0 auto;
+}
+header .description {
+	width: 95%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+}
+/*header ends*/
+
+
+/*div.content starts*/
+.content {
+	text-align: center;
+}
+#myPortfolio {
+ 	padding: 50px 0;
+ 	font-family: 'Roboto', sans-serif;
+ 	font-size: 20px;
+ 	font-weight: 700;
+}
+.row {
+	width: 100%;
+	padding-bottom: 50px;
+}
+.row .col-1 {
+	width: 100%;
+}
+.row img {
+ 	width: 95%;
+	border-radius: 20px;
+}
+.row .col-1 p.title {
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+	padding: 30px 0;
+	color: #333;
+}
+.row .col-1 p.portfolioDescription {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	padding: 0 10px 30px 10px;
+	color: rgb(146, 153, 154);
+}
+/*div.content ends*/
+
+/*footer starts*/
+footer {
+	padding: 50px 0;
+}
+.footer {
+	width: 95%;
+	margin: 0 auto;
+}
+.footerTitle {
+	font-family: 'Roboto', sans-serif;
+	color: rgb(56, 64, 71);
+	font-weight: 700;
+	font-size: 20px;
+}
+.footerInfo {
+	padding: 30px 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 22px;
+}
+.contactInfo {
+	border-bottom: .5px solid rgba(0,0,0,.15);
+}
+.contactInfo p{
+	padding-bottom: 20px;
+	font-family: 'Lato', sans-serif;
+	font-size: 22px;
+}
+.contactInfo p span {
+	font-weight: 700;
+	padding-left: 10px;
+}
+.contactInfo p:last-child {
+	padding-bottom: 70px;
+}
+.end{
+	padding: 30px 0 40px 0;
+}
+.endLeft, .endRight {
+	display: inline-block;
+	float: left;
+}
+.endRight {
+	float: right;
+}
+.endRight li {
+	list-style: none;
+}
+.endRight li:not(:first-child) {
+	display: none;
+}
+.end a {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(56, 64, 71);
+	font-weight: 700;
+}
+.end a:hover {
+	color: rgb(201,72,72);
+}
+/*footer ends*/
+
+/*media queries*/
+@media screen and (min-width: 768px){
+	/*div.main-nav starts*/
+	.leftNav {
+		padding-bottom: 35px;
+	}
+	.main-nav li a#myName {
+		font-weight: 700;
+		font-size: 42px;
+	}
+	.rightNav {
+		overflow: auto;
+
+	}
+	.rightNav li {
+		display: inline-block;
+	    background: rgb(249, 250, 250);
+	    padding: 0 20px;
+	    margin: 10px auto;
+	    font-size: 24px;
+	    font-weight: 700;
+	 	width: auto;
+	}
+	.rightNav li a:hover {
+		border-bottom: 3px solid rgb(201,72,72);
+		color: rgb(56, 64, 71)
+	}
+	/*div.main-nav ends*/
+	/*header starts*/
+	header {
+	    overflow: auto;
+	    padding: 65px 0;
+	    width: 95%;
+	    margin: 0 auto;
+	}
+	.profilePic, .description {
+		display: inline-block;
+		float: right;
+		width: 33%;
+	}
+	header .description {
+		width: 66%;
+		text-align: left;
+		float: left;
+	}
+	header img {
+		padding: 0;
+	    width: 100%;
+	    margin: 0 auto;
+	;
+	}/*header ends/
+
+	/*div.content starts*/
+	.content {
+		overflow: auto;
+	}
+	.row .col-1 {
+		width: 49%;
+		float: left;
+	}
+	.row .col-1:nth-child(2) {
+		float:right;
+	}
+	.row .col-1 p.title {
+		padding: 30px 0 20px 0;
+	}
+	.row .col-1 p.portfolioDescription {
+    	font-size: 16px;
+	}
+	/*div.content ends*/
+
+	/*footer starts*/
+	footer {
+		overflow: auto;
+	}
+	.contacting {
+		width: 70%;
+		margin: 0 auto;
+	}
+	.footerInfo {
+	    padding: 50px 0;
+	}
+	.contactInfo {
+		border: none;
+	}
+	.end {
+		border-top: .5px solid rgba(0,0,0,.15);
+		padding: 30px 0 100px 0;
+	}
+	.endRight li {
+		display: inline-block !important;
+		text-transform: uppercase;
+		padding-left: 20px;
+	}
+	.backToTop {
+		display: none;
+	}
+ 	/*footer ends*/
+ }
+ @media screen and (min-width: 1024px) {
+ 	/*div.main-nav starts*/
+ 	.main-nav {
+ 		width: 95%;
+ 		margin: 0 auto;
+ 		padding-top: 40px;
+ 	}
+ 	.leftNav, .rightNav {
+ 		width: 50%;
+ 		display: inline-block;
+ 		float:left;
+ 		text-align: right;
+ 	}
+ 	.main-nav .leftNav {
+ 		padding: 0;
+ 		text-align: left;
+ 	}
+ 	.main-nav li a#myName {
+	    font-size: 33px;
+	}
+ 	.rightNav li {
+ 	   	background: rgb(249, 250, 250);
+    	padding: 0 0 0 40px;
+    	font-size: 20px
+	}
+	.rightNav li a:hover{
+		border: none;
+		color: #fff;
+		background: rgb(201,72,72);
+		padding: 10px 20px;
+		border-radius: 20px;
+	}
+	/*div.main-nav ends*/
+
+	/*header starts*/
+	header .description {
+	    width: 60%;
+	}
+	.profilePic {
+		width: 38%;
+	}
+	.row .col-1 {
+		width: 33%;
+	}
+	/*header ends*/
+
+	/*footer starts*/
+	.end {
+		padding: 30px 0;
+	}
+
+	/*footer ends*/
+ }
